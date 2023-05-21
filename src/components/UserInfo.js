@@ -1,10 +1,11 @@
 import { Popup } from "./Popup.js";
 
 export class UserInfo extends Popup{
-  constructor(selector,{userName, userInfo}){
+  constructor(selector,{userName, userInfo, avatar},){
     super(selector);
     this._userName = document.querySelector(userName);
     this._userInfo = document.querySelector(userInfo);
+    this._avatar = document.querySelector(avatar);
   }
 
   getUserInfo() {
@@ -12,9 +13,10 @@ export class UserInfo extends Popup{
             info: this._userInfo.textContent }
   }
 
-  setUserInfo({nameUser, personalInfo}) {
-    this._userName.textContent = nameUser;
-    this._userInfo.textContent = personalInfo;
+  setUserInfo({name, about, avatar}) {
+    this._userName.textContent = name;
+    this._userInfo.textContent = about;
+    this._avatar.src = avatar;
   }
 
 }
