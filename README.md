@@ -9,6 +9,6 @@ Cервис Mesto: интерактивная страница, куда мож�
 
 Асинхронные функции: колбэки
 
-Ссылка: https://svetlana-kav.github.io/mesto/
+Ссылка: https://svetlana-kav.github.io/MESTO./
 
 permalink: /index.html
